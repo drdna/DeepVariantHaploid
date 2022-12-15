@@ -16,7 +16,8 @@ sbatch $script/BWT2-GATK.sh B71v5 /path/to/reads_directory ERR2188722
 ```bash
 sbatch $script/BWT2all-GATK.sh B71v5 /path/to/reads_directory ERR2188722
 ```
-4. Run [DeepVariant.sh](/scripts/DeepVariant.sh) on the resulting .bam file:
+4. Run [DeepVariant.sh](/scripts/DeepVariant.sh) on the resulting .bam files:
 ```bash
-sbatch $script/DeepVariant B71v5_index/B71v5.fasta B71v5_ERR2188722_ALIGNall DeepVariantCalls DeepVariantTempFiles
+sbatch $script/DeepVariant B71v5_index/B71v5.fasta B71v5_ERR2188722_ALIGN/accepted_hits_sortedRG.bam DeepVariantCalls DeepVariantTempFiles
+sbatch $script/DeepVariant B71v5_index/B71v5.fasta B71v5_ERR2188722_ALIGNall/accepted_hits_sortedRG.bam DeepVariantCalls DeepVariantTempFiles
 ```
