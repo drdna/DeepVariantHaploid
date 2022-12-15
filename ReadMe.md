@@ -8,9 +8,9 @@ mkdir B71v5_index
 bowtie2-build B71v5.fasta B71v5_index/B71v5; mv B71v5.fasta B71v5_index
 samtools faidx B71v5_index/B71v5.fasta
 ```
-2. Use the [BWT2all_GATK.sh](/scripts/BWT2all_GATK.sh) script (GATK 4.1.4.1) to align reads against the reference and report ALL alignments. Perform SNP calling using standard parameters used for variant calling in fungi:
+2. Use the [BWT2all-GATK.sh](/scripts/BWT2all-GATK.sh) script (GATK 4.1.4.1) to align reads against the reference and report ALL alignments. Perform SNP calling using standard parameters used for variant calling in fungi:
 ```bash
-sbatch $script/BWT2all_GATK.sh B71v5 /path/to/reads_directory ERR2188722
+sbatch $script/BWT2all-GATK.sh B71v5 /path/to/reads_directory ERR2188722
 ```
 3. Run DeepVariant on the resulting .bam file:
 ```bash
