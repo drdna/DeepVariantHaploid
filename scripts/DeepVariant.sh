@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #SBATCH --time 12:00:00
-#SBATCH --job-name=bowtie2
+#SBATCH --job-name=DeepVariant
 #SBATCH --nodes=1
 #SBATCH --ntasks=16
 #SBATCH --partition=normal
 #SBATCH --mem=100GB
 #SBATCH --mail-type ALL
-#SBATCH	-A coa_farman_uksr
+#SBATCH	-A farman_uksr
 #SBATCH --mail-type ALL
 #SBATCH --mail-user farman@uky.edu
 
