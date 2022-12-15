@@ -1,6 +1,6 @@
 # DeepVariantHaploid - AI-based variant calling in haploid genomes
 ## Motivation
-Current work in the lab necessitates the use of near-truth SNP datasets. Industry-standard SNP calling pipelines produce an unacceptable number of false calls in fungal genomes (5-30%) due to alignment problems caused by the mutageneic process known as Repeat-Induced Point Mutation (RIP). The goal of this study is to benchmark DeepVariant - an Artifical Intelligence-based variant caller - against a simple, genome-informed, human intelligence-based strategy that produces near-truth SNP calls.
+Current work in the lab necessitates the use of near-truth SNP datasets. Industry-standard SNP calling pipelines produce an unacceptable number of false calls in fungal genomes (5-30%) due to alignment problems caused by the mutagenic process known as Repeat-Induced Point Mutation (RIP). The goal of this study is to benchmark DeepVariant - an Artifical Intelligence-based variant caller - against [SmartSNPs](), a simple, genome-informed, human intelligence-based strategy that produces near-truth SNP calls.
 ## Methods
 1. Generate BWT and fasta indexes for the reference genome using bowtie 2.2.5:
 ```bash
