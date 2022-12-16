@@ -26,7 +26,7 @@ sbatch $script/DeepVariant B71v5_index/B71v5.fasta B71v5_ERR2188722_ALIGNall/acc
 zgrep PASS DeepVariantAllAlign.vcf.gz | awk '$1 ~ /^##/ || (length($4) == 1 && length($5) == 1' | gzip - > DeepVariantAll.vcf.gz
 zgrep PASS DeepVariantBestAlign.vcf.gz | awk '$1 ~ /^##/ || (length($4) == 1 && length($5) == 1)' | gzip - > DeepVariantBest.vcf.gz
 ```
-Resulting VCF files: [
+Resulting VCF files: [DeepVariantAll.vcf.gz](/data/DeepVariantAll.vcf.gz), [DeepVariantBest.vcf.gz](/data/DeepVariantBest.vcf.gz)
 6. Visualize html reports:
 ### Variants found with "best" alignments
 ![DeepVariantBest_report.tiff](data/DeepVariantBest_report.tiff)
