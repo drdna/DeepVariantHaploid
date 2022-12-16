@@ -49,6 +49,6 @@ Runtime report is as follows:
 ```bash
 awk '$1 ~ /^##/ || (length($4) == 1 && length($5) == 1)' ERR2188722_genotyped-snps_SSfilter.vcf | grep -v FAIL > SmartSNPsTruthSet.vcf
 ```
-SmartSNPsTruthSet dataset:
+SmartSNPs "Truth" dataset:
 
 [SmartSNPsTruthSet.vcf](/data/SmartSNPsTruthSet.vcf)
