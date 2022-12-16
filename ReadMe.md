@@ -28,6 +28,4 @@ zgrep PASS DeepVariantBestAlign.vcf.gz | awk '$1 ~ /^##/ || (length($4) == 1 && 
 ```
 6. Visualize html reports:
 
-![DeepVariantBest.variant_report.png](/blob/main/DeepVariantBest.variant_report.png)
-
-!(/DeepVariantAll.variant_report.png)
+![DeepVariantBest.variant_report.png](/DeepVariantBest.variant_report.png)
