@@ -27,4 +27,5 @@ zgrep PASS DeepVariantAllAlign.vcf.gz | awk '$1 ~ /^##/ || (length($4) == 1 && l
 zgrep PASS DeepVariantBestAlign.vcf.gz | awk '$1 ~ /^##/ || (length($4) == 1 && length($5) == 1)' | gzip - > DeepVariantBest.vcf.gz
 ```
 6. Visualize html reports:
-http://htmlpreview.github.io/?https://github.com/drdna/DeepVariantHaploid/blob/main/data/DeepVariantAll.visual_report.html
+
+(http://htmlpreview.github.io/?https://github.com/drdna/DeepVariantHaploid/blob/main/data/DeepVariantAll.visual_report.html)
