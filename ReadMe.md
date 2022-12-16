@@ -27,5 +27,7 @@ zgrep PASS DeepVariantAllAlign.vcf.gz | awk '$1 ~ /^##/ || (length($4) == 1 && l
 zgrep PASS DeepVariantBestAlign.vcf.gz | awk '$1 ~ /^##/ || (length($4) == 1 && length($5) == 1)' | gzip - > DeepVariantBest.vcf.gz
 ```
 6. Visualize html reports:
-
+Variants found with "best" alignments
 ![DeepVariantBest_report.tiff](data/DeepVariantBest_report.tiff)
+Variants found with "all" alignments
+![DeepVariantAll_report.tiff](data/DeepVariantAll_report.tiff)
