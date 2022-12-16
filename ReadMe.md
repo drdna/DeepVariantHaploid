@@ -46,7 +46,7 @@ Runtime report is as follows:
 2. Extract valid variants:
 ```bash
 awk '$1 ~ /^##/ || (length($4) == 1 && length($5) == 1)' ERR2188722_genotyped-snps_SSfilter.vcf | grep -v FAIL > SmartSNPsTruthSet.vcf
-
+```
 SmartSNPsTruthSet dataset:
 
 [SmartSNPsTruthSet.vcf](/data/SmartSNPsTruthSet.vcf)
