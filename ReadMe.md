@@ -33,3 +33,12 @@ Resulting VCF files: [DeepVariantAll.vcf.gz](/data/DeepVariantAll.vcf.gz), [Deep
 ![DeepVariantBest_report.tiff](data/DeepVariantBest_report.tiff)
 ### Variants found with "all" alignments
 ![DeepVariantAll_report.tiff](data/DeepVariantAll_report.tiff)
+
+## Generate "truth" dataset:
+1. Use SmartSNPsV2.pl to filter "best" alignments VCF file (note: using all alignments makes no difference to the SNP calls):
+```bash
+gunzip DeepVariantAllAlign.vcf.gz
+perl SmartSNPsV2.pl DeepVariantAllAlign.vcf B71v5_align/B71v5.B71v5_alignments 20 10
+```
+Runtime report indicates 
+perl SmartSNPsV2.pl 
