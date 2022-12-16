@@ -40,5 +40,13 @@ Resulting VCF files: [DeepVariantAll.vcf.gz](/data/DeepVariantAll.vcf.gz), [Deep
 gunzip DeepVariantAllAlign.vcf.gz
 perl SmartSNPsV2.pl DeepVariantAllAlign.vcf B71v5_align/B71v5.B71v5_alignments 20 10
 ```
-Runtime report indicates 
-perl SmartSNPsV2.pl 
+Runtime report is as follows: 
+#NumRecords: 7980; Allowed: 406; Repeated: 4958; Non-repeat heterozygotes: 2209; Low coverage: 407
+
+2. Extract valid variants:
+```bash
+awk '$1 ~ /^##/ || (length($4) == 1 && length($5) == 1)' ERR2188722_genotyped-snps_SSfilter.vcf | grep -v FAIL > SmartSNPsTruthSet.vcf
+
+SmartSNPsTruthSet dataset:
+
+[SmartSNPsTruthSet.vcf](/data/SmartSNPsTruthSet.vcf)
