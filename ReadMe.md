@@ -43,7 +43,7 @@ perl SmartSNPsV2.pl DeepVariantAllAlign.vcf B71v5_align/B71v5.B71v5_alignments 2
 Runtime report is as follows: 
 #NumRecords: 7980; Allowed: 406; Repeated: 4958; Non-repeat heterozygotes: 2209; Low coverage: 407.
 
-### SmartSNPs identified a total of 406 valid (true variants), with a majority of GATK calls being rejected due to repeats in the reference genome, followed by repeats in the query genome.
+### GATK reported 7980 SNPs of which only 406 are valid (true variants), with 4958 calls being rejected because they came from repeats in the reference genome, and 2209 rejected as they were derived from repeats in the query genome.
 
 2. Extract valid variants:
 ```bash
