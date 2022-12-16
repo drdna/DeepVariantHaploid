@@ -28,5 +28,5 @@ zgrep PASS DeepVariantBestAlign.vcf.gz | awk '$1 ~ /^##/ || (length($4) == 1 && 
 ```
 6. Visualize html reports:
 
-![DeepVariantBest.visual_report.html](/data/DeepVariantBest.visual_report.html)
-![DeepVariantAll.visual_report.html](/data/DeepVariantAll.visual_report.html)
+[DeepVariantBest.visual_report.html](/data/DeepVariantBest.visual_report.html)
+[DeepVariantAll.visual_report.html](/data/DeepVariantAll.visual_report.html)
