@@ -12,7 +12,8 @@ samtools faidx B71v5_index/B71v5.fasta
 ```bash
 sbatch $script/BWT2-GATK.sh B71v5 /path/to/reads_directory ERR2188722
 ```
-Resulting VCF file: [ERR21788722_best_genotyped-snps.vcf](/data/ERR21788722_best_genotyped-snps.vcf)
+Resulting VCF file: [ERR2188722_best_genotyped-snps.vcf](/data/ERR2188722_best_genotyped-snps.vcf)
+
 3. Use the [BWT2all-GATK.sh](/scripts/BWT2all-GATK.sh) script (GATK 4.1.4.1) to align reads against the reference and report ALL alignments. Perform SNP calling using standard parameters used for variant calling in fungi:
 ```bash
 sbatch $script/BWT2all-GATK.sh B71v5 /path/to/reads_directory ERR2188722
