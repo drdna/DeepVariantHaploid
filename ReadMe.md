@@ -60,7 +60,7 @@ Manual filtering resulted in the removal of XX false variants identifiable becau
 ## A total of 4,823 SNPs passed the DeepVariant filter for the best alignment dataset. Only 2,450 of these were shared with the GATK dataset.
 
 ## DeepVariant makes inexplicable errors in calling homozygotes versus heterozygotes:
-### Hets called as homos:
+### Hets called as homos (just a tiny set of examples):
 chr1	2288874	.	C	T	27	PASS	.	GT:GQ:DP:AD:VAF:PL	1/1:25:106:16,89:0.839623:26,28,0
 
 chr2	3203907	.	A	T	17.7	PASS	.	GT:GQ:DP:AD:VAF:PL	1/1:14:201:62,135:0.671642:17,16,0
