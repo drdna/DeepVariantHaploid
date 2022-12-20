@@ -62,15 +62,25 @@ Manual filtering resulted in the removal of XX false variants identifiable becau
 ## DeepVariant makes inexplicable errors in calling homozygotes versus heterozygotes:
 ### Hets called as homos:
 chr1	2288874	.	C	T	27	PASS	.	GT:GQ:DP:AD:VAF:PL	1/1:25:106:16,89:0.839623:26,28,0
+
 chr2	3203907	.	A	T	17.7	PASS	.	GT:GQ:DP:AD:VAF:PL	1/1:14:201:62,135:0.671642:17,16,0
+
 chr3	1799382	.	A	T	7.4	PASS	.	GT:GQ:DP:AD:VAF:PL	1/1:4:206:40,66:0.320388:5,4,0
+
 chr3	4495178	.	T	C	17.3	PASS	.	GT:GQ:DP:AD:VAF:PL	1/1:9:139:69,61:0.438849:16,8,0
+
 chr3	7895961	.	A	G	9.2	PASS	.	GT:GQ:DP:AD:VAF:PL	1/1:9:146:57,87:0.59589:8,22,0
+
 chr3	7895978	.	C	A	4.2	PASS	.	GT:GQ:DP:AD:VAF:PL	1/1:4:155:53,95:0.612903:1,12,0
+
 ### Homos called as hets (much less common):
+
 chr2	912475	.	C	T	14.2	PASS	.	GT:GQ:DP:AD:VAF:PL	0/1:7:60:0,56:0.933333:13,0,7
+
 chr2	4883063	.	G	T	17.7	PASS	.	GT:GQ:DP:AD:VAF:PL	0/1:10:131:0,131:1:17,0,10
+
 chr7	1613363	.	G	A	21.1	PASS	.	GT:GQ:DP:AD:VAF:PL	0/1:7:100:0,97:0.97:20,0,5
+
 
 
 
