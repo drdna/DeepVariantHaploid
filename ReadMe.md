@@ -12,6 +12,7 @@ samtools faidx B71v5_index/B71v5.fasta
 ```bash
 sbatch $script/BWT2-GATK.sh B71v5 /path/to/reads_directory ERR2188722
 ```
+Resulting VCF file: [ERR21788722_best_genotyped-snps.vcf](/data/ERR21788722_best_genotyped-snps.vcf)
 3. Use the [BWT2all-GATK.sh](/scripts/BWT2all-GATK.sh) script (GATK 4.1.4.1) to align reads against the reference and report ALL alignments. Perform SNP calling using standard parameters used for variant calling in fungi:
 ```bash
 sbatch $script/BWT2all-GATK.sh B71v5 /path/to/reads_directory ERR2188722
@@ -43,8 +44,6 @@ perl SmartSNPsV2.pl DeepVariantAllAlign.vcf B71v5_align/B71v5.B71v5_alignments 2
 Runtime report is as follows: 
 #NumRecords: 7980; Allowed: 406; Repeated: 4958; Non-repeat heterozygotes: 2209; Low coverage: 407.
 
-### GATK reported 7980 SNPs of which only 406 are valid (true variants), with 4958 calls being rejected because they came from repeats in the reference genome, and 2209 rejected as they were derived from repeats in the query genome.
-
 2. Extract valid variants:
 ```bash
 awk '$1 ~ /^##/ || (length($4) == 1 && length($5) == 1)' ERR2188722_genotyped-snps_SSfilter.vcf | grep -v FAIL > SmartSNPsTruthSet.vcf
@@ -52,3 +51,9 @@ awk '$1 ~ /^##/ || (length($4) == 1 && length($5) == 1)' ERR2188722_genotyped-sn
 ### SmartSNPs "Truth" dataset:
 
 [SmartSNPsTruthSet.vcf](/data/SmartSNPsTruthSet.vcf)
+
+Manual filtering resulted in the removal of XX false variants identifiable because several occurred within very short distances of one another. These SNPs likely come from short blocks of non-orthologous sequence in the query genome.
+
+### GATK reported 6,830 SNPs (best alignment) of which only 406 are valid (true variants), with 4958 calls being rejected because they came from repeats in the reference genome, and 2209 rejected as they were derived from repeats in the query genome.
+
+
